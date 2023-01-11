@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Autoprogettazione Punched It';
+    src: url('fonts/AutoprogettazionePunchedIt.woff2') format('woff2'),
+        url('fonts/AutoprogettazionePunchedIt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Autoprogettazione Outlines It';
+    src: url('fonts/AutoprogettazioneOutlinesIt.woff2') format('woff2'),
+        url('fonts/AutoprogettazioneOutlinesIt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABCDiatypeMonoEdu-Light';
+    src: url('fonts/ABCDiatypeMonoEdu-Light.woff2') format('woff2'),
+         url('fonts/ABCDiatypeMonoEdu-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    margin: 0;
+    background: rgb(235, 235, 235);
+}
+
+h1, h2, h3, p, small, footer, a {
+    color: #8888e4;
+}
+
+h1 {
+    font-family: 'Autoprogettazione Outlines It'; font-weight: 2; font-size: 150pt; text-align: center;
+}
+
+h2, small, footer, a {
+    font-family: 'ABCDiatypeMonoEdu-Light';
+    font-size: 12pt;}
+
+h3 {
+    color: transparent;
+    font-family: 'ABCDiatypeMonoEdu-Light';
+    font-size: 50pt;
+    text-align: justify;
+    margin-top: -10vh;
+    padding-bottom: 5vh;
+    font-weight: 1;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #8888e4;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+a:hover, u {
+    text-decoration: underline dotted 5px;
+    transition: 1.25s;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 0.33fr 0.33fr 0.33fr;
+    text-align: center;
+    line-height: 10vh;
+}
+
+.tagline {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: -5vh;
+}
+
+.h, .h-space, .grid, .gitem, .img {
+    z-index: 2;
+
+}
+
+.h-space {
+    margin: 2vh 10vw;
+
+}
+
+.h-subtext {
+    display: grid;
+    grid-template-columns: repeat(4, 0.25fr);
+    grid-gap: 2vw;
+    margin: 2vh 10vw;
+    margin-bottom: 10vh;
+
+}
+
+.grid {
+    display: grid;
+    grid-gap: 5vh 5vw;
+    grid-template-columns: repeat(3, 0.33fr);
+    grid-template-rows: repeat(4, 0.5fr);
+}
+.gitem {
+    margin-left: 1vw;
+}
+
+img {
+    max-width: 100%; max-height: 100%;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.square {
+
+margin-top: 3.5vh;
+margin-left: 2.5vw;
+position: fixed;
+width: 2vw;
+height: 3.5vh;
+filter: blur(5px);
+background: #8888e4;
+border-radius: 50vh;
+}
+
+.square:hover {
+    animation: buzz 2s ease-in-out infinite;
+}
+
+@keyframes buzz{
+    0% {
+        width: 2vw;
+        height: 3.5vh;
+    }
+    50% {
+        width: 3vw;
+        height: 5vh;
+    }
+
+    100% {
+        width: 2vw;
+        height: 3.5vh;
+    }
+}
